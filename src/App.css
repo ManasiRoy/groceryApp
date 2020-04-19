@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.product {
+  display: flex;
+  margin: 0 0 20px;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 20px;
+}
+
+.product h2 {
+  color: #2b6a09;
+  font-size: 40px;
+  margin: 0 0 15px;
+  line-height: 1;
+}
+
+.product h3,
+.product h4 {
+  color: #040404;
+  font-size: 30px;
+  margin: 0 0 10px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.leftPro figure {
+  width: 200px;
+  height: 200px;
+  margin: 0 2rem 1rem 0;
+  border: 1px solid #d2d2d2;
+  text-align: center;
+}
+
+.leftPro figure img {
+  max-height: 100%;
+}
+
+.leftPro figcaption {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
+
+.addtocart {
+  background: #65ce35;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px 5px 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.addcart,
+.substact-cart {
+  background: #65ce35;
+  border: none;
+  border-radius: 100%;
+  margin: 0 10px 5px 0;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  line-height: 1;
+}
+.popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.popupinnr {
+  max-width: 600px;
+  background: #f3f3f3;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  background: #ddd;
+  padding: 10px 15px;
+}
+.productcontainer {
+  padding-bottom: 145px;
+}
+.total .left {
+  align-self: center;
+}
+.total .right {
+  align-self: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product h2 {
+    font-size: 30px;
+  }
+  .product h3 {
+    font-size: 20px;
+  }
+  .product h4 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .leftPro figure {
+    width: 120px;
+    height: 120px;
+    margin: 0 1rem 1rem 0;
+  }
+  .addtocart {
+    padding: 10px 15px;
+    margin: 0 10px 10px 0;
+    font-size: 14px;
+  }
+  .total .left h2 {
+    font-size: 16px;
+  }
+}
